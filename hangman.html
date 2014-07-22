@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Hangman</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Hangman</h1>
+      <p>Play Hangman!  Choose letters to guess a word.  Careful!  You need to guess the word correctly before the body is completely shown or you lose!</p>
+      <button type="button" class="btn btn-primary" id="start-game">Start the game!</button><br>
+      <br>
+        <div class="col-md-6">
+          <form id="guessLetter">
+            <div class="form-group">
+              <label for="letters">Begin guessing your word by entering your letters!</label>
+              <input id="letters" type="text" class="form-control">
+            </div>
+            <button type= "submit" class="btn">Guess!</button>
+          </form>
+          <div class="guessWord">
+            <h2><span class="blanks"></span></h2>
+          </div>
+          <div class="used">
+            <h4>Used letters:<span class="usedLetter"></span></h4>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row" id="noose">
+            <p>|</p>
+          </div>
+          <div class="row" id="head">
+            <p>O</p>
+          </div>
+          <div class="row" id="neck">
+            <p>|</p>
+          </div>
+          <div class="row" id="arms">
+            <p>-----</p>
+          </div>
+          <div class="row" id="body">
+            <p>|</p><br>
+            <p>|</p>
+          </div>
+          <div class="row" id="legs">
+            <p>/\</p>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>

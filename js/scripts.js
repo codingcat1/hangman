@@ -18,3 +18,19 @@ var Hangman = {
     }
   }
 };
+
+$(document).ready(function(){
+  $("#start-game").click(function(){
+    var randomWord = ["orange", "apple", "banana", "cherry", "pear"];
+    var selectWord = function () {
+    var wordSelected = randomWord[Math.floor(Math.random() * 4)];
+     };
+     return wordSelected;
+    alert(wordSelected);
+  });
+  $("form#guessLetter").submit(function(event){
+    event.preventDefault;
+
+
+  });
+});
