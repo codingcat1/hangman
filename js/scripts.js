@@ -12,6 +12,8 @@ var Hangman = {
     for (var i = 0; i < this.setWord.length; i++) {
       if (this.setWord.indexOf(this.guessedLetter) >= 0) {
         this.guessedLetter = true;
+      } else {
+        this.guessedLetter = false;
       } return this.guessedLetter;
     }
   }
